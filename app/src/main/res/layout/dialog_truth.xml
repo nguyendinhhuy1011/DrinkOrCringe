@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonfailed"
+        android:id="@+id/buttonfailedtruth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -28,13 +28,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewtruth" />
 
     <Button
-        android:id="@+id/buttoncomplete"
+        android:id="@+id/buttoncompletetruth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:layout_marginTop="36dp"
         android:text="Completed"
-        app:layout_constraintStart_toEndOf="@+id/buttonfailed"
+        app:layout_constraintStart_toEndOf="@+id/buttonfailedtruth"
         app:layout_constraintTop_toBottomOf="@+id/textViewtruth" />
 </androidx.constraintlayout.widget.ConstraintLayout>

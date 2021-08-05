@@ -13,40 +13,38 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Secondactivity extends AppCompatActivity {
     ListView lvplayer;
     Button buttonAdd , buttonupdate;
     EditText edtPlayer;
-    int position =-1;
-    static ArrayList <String> arraylistplayer;
+    static ArrayList<Player> arraylistplayer;
     Button buttonPlaygame;
-
+    PlayerAdapter adapter;
+    int position = -1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secondactivity);
 
-        lvplayer = (ListView) findViewById(R.id.listplayer);
+        AnhXa();
+        adapter = new PlayerAdapter(this,R.layout.dong_listplayer,arraylistplayer);
+        lvplayer.setAdapter(adapter);
+
+
         buttonAdd = (Button) findViewById(R.id.addplayer);
         buttonupdate = (Button) findViewById(R.id.buttonupdate);
         edtPlayer = (EditText) findViewById(R.id.editTextplayer);
         buttonPlaygame = (Button) findViewById(R.id.buttonplaygame);
-        arraylistplayer = new ArrayList<>();
-        arraylistplayer.add("Player 1");
-        arraylistplayer.add("Player 2");
 
-        ArrayAdapter adapter = new ArrayAdapter (Secondactivity.this,
-                android.R.layout.simple_list_item_1, arraylistplayer);
-
-        lvplayer.setAdapter(adapter);
 
         buttonAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String player = edtPlayer.getText().toString();
-                arraylistplayer.add(player);
-                adapter.notifyDataSetChanged();
+                @Override
+                public void onClick(View v) {
+                    String player = edtPlayer.getText().toString();
+                    arraylistplayer.add(new Player(player));
+                    adapter.notifyDataSetChanged();
                 Toast.makeText(Secondactivity.this, "Added player successfully", Toast.LENGTH_SHORT).show();
             }
         });
@@ -60,18 +58,20 @@ public class Secondactivity extends AppCompatActivity {
         lvplayer.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
-                edtPlayer.setText(arraylistplayer.get(i));
+                edtPlayer.setText(arraylistplayer.get(i).getName());
                 position = i;
             }
         });
-        buttonupdate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                arraylistplayer.set(position,edtPlayer.getText().toString());
-                adapter.notifyDataSetChanged();
-                Toast.makeText(Secondactivity.this,"Updated successfully",Toast.LENGTH_SHORT).show();
-            }
-        });
+//        buttonupdate.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                arraylistplayer.set(position,edtPlayer.
+//                        getText(arraylistplayer.get(position).setName();
+//
+//                adapter.notifyDataSetChanged();
+//                Toast.makeText(Secondactivity.this,"Updated successfully",Toast.LENGTH_SHORT).show();
+//            }
+//        });
         lvplayer.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int i, long id) {
@@ -81,5 +81,12 @@ public class Secondactivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    private void AnhXa() {
+        lvplayer = (ListView) findViewById(R.id.listplayer);
+        arraylistplayer = new ArrayList<>();
+        arraylistplayer.add(new Player("Player 1"));
+        arraylistplayer.add(new Player("Player 2"));
     }
 }
