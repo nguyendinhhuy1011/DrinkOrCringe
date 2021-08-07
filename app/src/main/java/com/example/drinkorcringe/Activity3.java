@@ -110,8 +110,9 @@ public class Activity3 extends AppCompatActivity {
 //                    System.out.println("change screen");
                     Intent intent4 = new Intent(Activity3.this,Activity4.class);
                     startActivity(intent4);
-                } else
-                Dialog1();
+                } else {
+                    Dialog1();
+                }
             }
         });
 
@@ -120,6 +121,7 @@ public class Activity3 extends AppCompatActivity {
     }
     private void Dialog1(){
         Dialog dialog = new Dialog(this);
+
         dialog.setContentView(R.layout.dialog_custom);
 
         TextView txtplayer = (TextView) dialog.findViewById(R.id.textViewplayer1);
@@ -140,6 +142,7 @@ public class Activity3 extends AppCompatActivity {
                 Dialog3();
             }
         });
+
         dialog.show();
     }
     private void Dialog2(){

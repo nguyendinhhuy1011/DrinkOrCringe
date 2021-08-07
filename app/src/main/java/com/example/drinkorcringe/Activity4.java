@@ -57,11 +57,13 @@ public class Activity4 extends AppCompatActivity {
             txtPointTop2.setText(Secondactivity.arraylistplayer.get(1).getPoint()+"");
             if (Secondactivity.arraylistplayer.size()<=2){
                 txtPlayerTop3.setText("No player");
+                txtPointTop3.setText("0");
             }
             if (Secondactivity.arraylistplayer.size()>2){
                 txtPlayerTop3.setText(Secondactivity.arraylistplayer.get(2).getName());
+                txtPointTop3.setText(Secondactivity.arraylistplayer.get(2).getPoint()+"");
             }
-            txtPointTop3.setText(Secondactivity.arraylistplayer.get(2).getPoint()+"");
+
 
 //        for (int i = 0; i < 2; i++) {
 //            txtPointTop1.setText(Secondactivity.arraylistplayer.get(0).getPoint());

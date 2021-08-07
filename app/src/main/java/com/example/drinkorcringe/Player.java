@@ -35,7 +35,7 @@ public class Player {
         point = point -1;
     }
     public void add2point(){
-        point = point +1;
+        point = point +2;
     }
 }
 

@@ -4,16 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/background222nen"
     tools:context=".Activity3">
+
 
     <ImageView
         android:id="@+id/spinRotate"
-        android:layout_width="287dp"
-        android:layout_height="367dp"
-        android:layout_marginTop="144dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:foregroundGravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/spincircle" />
+        app:layout_constraintVertical_bias="0.241"
+        app:srcCompat="@drawable/spinbottlenen" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

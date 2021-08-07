@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FDFDFC"
+    android:background="@drawable/congrat"
     tools:context=".Activity4">
 
     <TextView
@@ -16,6 +16,7 @@
         android:layout_marginTop="24dp"
         android:drawableLeft="@drawable/medal3"
         android:text="No Player"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top2" />
 
@@ -27,6 +28,7 @@
         android:layout_marginLeft="260dp"
         android:layout_marginTop="24dp"
         android:text="TextView"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pointTop1" />
 
@@ -39,6 +41,7 @@
         android:layout_marginTop="24dp"
         android:drawableLeft="@drawable/medal2"
         android:text="TextView"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top1" />
 
@@ -51,6 +54,7 @@
         android:layout_marginTop="28dp"
         android:gravity="center_horizontal"
         android:text="CONGRATULATION"
+        android:textColor="#091275"
         android:textSize="33sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,6 +70,7 @@
         android:layout_marginTop="52dp"
         android:drawableLeft="@drawable/medal1"
         android:text="TextView"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -77,6 +82,7 @@
         android:layout_marginLeft="260dp"
         android:layout_marginTop="52dp"
         android:text="TextView"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -88,6 +94,7 @@
         android:layout_marginLeft="260dp"
         android:layout_marginTop="24dp"
         android:text="TextView"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pointTop2" />
 

@@ -34,7 +34,7 @@ public class Secondactivity extends AppCompatActivity {
 
 
         buttonAdd = (Button) findViewById(R.id.addplayer);
-        buttonupdate = (Button) findViewById(R.id.buttonupdate);
+//        buttonupdate = (Button) findViewById(R.id.buttonupdate);
         edtPlayer = (EditText) findViewById(R.id.editTextplayer);
         buttonPlaygame = (Button) findViewById(R.id.buttonplaygame);
 

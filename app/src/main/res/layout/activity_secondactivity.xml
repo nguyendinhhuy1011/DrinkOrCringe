@@ -29,37 +29,40 @@
     <Button
         android:id="@+id/addplayer"
         android:layout_width="130dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
         android:text="Add Player"
-        app:backgroundTint="#009688"
+        app:backgroundTint="#10AC9D"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextplayer" />
 
     <Button
         android:id="@+id/buttonplaygame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginLeft="144dp"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
         android:layout_marginTop="56dp"
+        android:background="@drawable/custom_button"
         android:text="Play Game"
+        app:backgroundTint="#20AEA0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addplayer" />
 
-    <Button
-        android:id="@+id/buttonupdate"
-        android:layout_width="95dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginLeft="108dp"
-        android:layout_marginTop="56dp"
-        android:text="Update"
-        app:backgroundTint="#009688"
-        app:layout_constraintStart_toEndOf="@+id/addplayer"
-        app:layout_constraintTop_toTopOf="@+id/editTextplayer" />
+    <!--    <Button-->
+<!--        android:id="@+id/buttonupdate"-->
+<!--        android:layout_width="95dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginStart="108dp"-->
+<!--        android:layout_marginLeft="108dp"-->
+<!--        android:layout_marginTop="56dp"-->
+<!--        android:text="Update"-->
+<!--        app:backgroundTint="#009688"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/addplayer"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/editTextplayer" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
